@@ -1,4 +1,4 @@
-let messages = ["siz qəbul edənə kimi dirəşəcəm", "bilirdim qəbul etməyəcəyinizi,amma pes etməyəcəm . götürürsüz?", "hələdə bezmədiniz?", "Görək hara qədər dirəşəcəksiz?", " qəbul edin canınız qurtarsın da )", "daha məndən günah getdi son dəfə deyirəm, qəbul edirsiz?", "bu sonuncu yox cavabıdırki mən alıram sizdən))))", "demişdim sizə Aytac xanım day çıxmaz sokakdasız , qəbul edin <3"];
+let messages = ["xətrinə dəydiyim üçün üzr istəyirəm", "usaqlığıma keç)", "hələdə bezmədinmi?", "səni çox çox çox istəyirəmmmm?", " qəbul et canın qurtarsın da)", "bax uje əsəbləşirəm haaaa", "artıq seçimi sənə buraxmıram mən deyən olacaq", "demişdimdə sənə gözəlim sən dəlisən mən səndəndə dəli)"];
 let noCount = 0;
 let noButton = document.getElementById("no");
 let yesButton = document.getElementById("yes");
@@ -22,7 +22,7 @@ function rejectLove() {
 function acceptLove() {
     document.getElementById("valentine").innerHTML = `
         <img src="https://media1.tenor.com/m/aEWN44So2ckAAAAC/kiss-kisses.gif" class="gif">
-        <div class="question"> İbo sizi çox istəyir Aytac xanımmm . Hər zaman belə gözəl qalın))) </div>
+        <div class="question"> nəinki balaca İboş elə böyük İboşda sizi çox istəyir <3 </div>
     `;
     launchConfetti();
     startHeartRain();
