@@ -1,4 +1,4 @@
-let messages = ["xətrinə dəydiyim üçün üzr istəyirəm", "usaqlığıma keç)", "hələdə bezmədinmi?", "səni çox çox çox istəyirəmmmm?", " qəbul et canın qurtarsın da)", "bax uje əsəbləşirəm haaaa", "artıq seçimi sənə buraxmıram mən deyən olacaq", "demişdimdə sənə gözəlim sən dəlisən mən səndəndə dəli)"];
+let messages = ["xətrinə dəydiyim üçün üzr istəyirəm", "usaqlığıma keç)", "hələdə bezmədinmi?", "səni çox çox çox istəyirəmmmm", " qəbul et canın qurtarsın da)", "bax uje əsəbləşirəm haaaa", "artıq seçimi sənə buraxmıram mən deyən olacaq", "demişdimdə sənə gözəlim sən dəlisən mən səndəndə dəli)"];
 let noCount = 0;
 let noButton = document.getElementById("no");
 let yesButton = document.getElementById("yes");
@@ -22,7 +22,7 @@ function rejectLove() {
 function acceptLove() {
     document.getElementById("valentine").innerHTML = `
         <img src="https://media1.tenor.com/m/aEWN44So2ckAAAAC/kiss-kisses.gif" class="gif">
-        <div class="question"> nəinki balaca İboş elə böyük İboşda sizi çox istəyir <3 </div>
+        <div class="question">Ibo sizi çox istəyir <3 </div>
     `;
     launchConfetti();
     startHeartRain();
