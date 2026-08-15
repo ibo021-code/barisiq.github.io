@@ -1,4 +1,14 @@
-let messages = ["xətrinə dəydiyim üçün üzr istəyirəm", "usaqlığıma keç)", "hələdə bezmədinmi?", "səni çox çox çox istəyirəmmmm", " qəbul et canın qurtarsın da)", "bax uje əsəbləşirəm haaaa", "artıq seçimi sənə buraxmıram mən deyən olacaq", "demişdimdə sənə gözəlim sən dəlisən mən səndəndə dəli)"];
+let messages = [
+  "xətrinə dəydiyim üçün üzr istəyirəm",
+  "usaqlığıma keç)",
+  "hələdə bezmədinmi?",
+  "səni çox çox çox istəyirəmmmm",
+  " qəbul et canın qurtarsın da)",
+  "bax uje əsəbləşirəm haaaa",
+  "artıq seçimi sənə buraxmıram mən deyən olacaq",
+  "demişdimdə sənə gözəlim sən dəlisən mən səndəndə dəli)"
+];
+
 let noCount = 0;
 let noButton = document.getElementById("no");
 let yesButton = document.getElementById("yes");
@@ -11,9 +21,21 @@ function rejectLove() {
     if (noCount < messages.length) {
         messageText.innerText = messages[noCount];
         noCount++;
-        noButton.style.transform = `scale(${1 - noCount * 0.1})`;
-        yesButton.style.transform = `scale(${1 + noCount * 0.1})`;
+        
+        // "Yox" düyməsini balacalaşdırırıq
+        let noScale = Math.max(0.5, 1 - noCount * 0.08);
+        noButton.style.fontSize = `${16 * noScale}px`;
+        noButton.style.padding = `${15 * noScale}px ${25 * noScale}px`;
+
+        // "Hə" düyməsini səliqəli şəkildə böyüdürük (layout-u pozmadan)
+        let yesPaddingV = 15 + noCount * 6;
+        let yesPaddingH = 25 + noCount * 10;
+        let yesFontSize = 16 + noCount * 3;
+
+        yesButton.style.padding = `${yesPaddingV}px ${yesPaddingH}px`;
+        yesButton.style.fontSize = `${yesFontSize}px`;
     }
+
     if (noCount === messages.length) {
         noButton.style.display = "none";
     }
